@@ -3,7 +3,7 @@ package com.leetcode.editor;
 /**
  * 最长公共前缀
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021 /11/29 9:30
  */
 public class LongestCommonPrefix {

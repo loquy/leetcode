@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 两数之和
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021 /11/29 13:33
  */
 public class TwoSum {

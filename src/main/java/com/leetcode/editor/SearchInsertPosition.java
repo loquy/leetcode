@@ -3,7 +3,7 @@ package com.leetcode.editor;
 /**
  * 搜索插入位置
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021/11/29 15:32
  */
 public class SearchInsertPosition {

@@ -5,7 +5,7 @@ import com.leetcode.utils.ListNode;
 /**
  * 两数相加
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021 /11/18 11:15
  */
 public class AddTwoNumbers {

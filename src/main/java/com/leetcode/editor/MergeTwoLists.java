@@ -5,7 +5,7 @@ import com.leetcode.utils.ListNode;
 /**
  * 合并两个有序链表
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021 /11/29 11:09
  */
 class MergeTwoLists {

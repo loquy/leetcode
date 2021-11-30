@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 有效的括号
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021 /11/29 10:42
  */
 public class ValidParentheses {

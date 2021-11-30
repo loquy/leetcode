@@ -3,7 +3,7 @@ package com.leetcode.utils;
 /**
  * 链表
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021 /11/18 14:43
  */
 public class ListNode {

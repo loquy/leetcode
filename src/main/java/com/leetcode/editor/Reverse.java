@@ -3,7 +3,7 @@ package com.leetcode.editor;
 /**
  * 整数反转
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021 /11/29 13:35
  */
 public class Reverse {

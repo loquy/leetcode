@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 罗马数字转整数
  *
- * @author lai qing yin
+ * @author loquy
  * @date 2021 /11/29 13:36
  */
 public class RomanToInt {
