@@ -36,7 +36,6 @@ public class LongestCommonPrefix {
         for (int i = 1; i < count; i++) {
             // 从第1个字符串开始与后一位字符串对比
             prefix = longestCommonPrefix(prefix, strs[i]);
-            int length = prefix.length();
             if (prefix.length() == 0) {
                 break;
             }
