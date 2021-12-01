@@ -4,15 +4,27 @@ package com.leetcode.editor;
  * 搜索插入位置
  *
  * @author loquy
- * @date 2021/11/29 15:32
+ * @date 2021 /11/29 15:32
  */
 public class SearchInsertPosition {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         int i = searchInsert(new int[]{1, 3, 4}, 2);
         System.out.println(i);
     }
 
+    /**
+     * Search insert int.
+     *
+     * @param nums   the nums
+     * @param target the target
+     * @return the int
+     */
     public static int searchInsert(int[] nums, int target) {
         // 二分查找
         int n = nums.length;
