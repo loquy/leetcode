@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 二叉树的中序便利
+ * 二叉树的中序遍历
  *
  * @author loquy
  * @date 2021 /12/06 10:25
