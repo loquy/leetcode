@@ -24,9 +24,7 @@ public class BinaryTreeInorderTraversal {
         TreeNode treeNode = new TreeNode(3, left, right);
         BinaryTreeInorderTraversal binaryTreeInorderTraversal = new BinaryTreeInorderTraversal();
         binaryTreeInorderTraversal.inorderTraversal(treeNode);
-        System.out.println(treeNode.val);
-        System.out.println(treeNode.left.val);
-        System.out.println(treeNode.right.val);
+        TreeNode.show(treeNode);
     }
 
     /**
