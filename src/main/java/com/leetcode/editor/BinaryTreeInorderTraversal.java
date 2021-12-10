@@ -22,8 +22,7 @@ public class BinaryTreeInorderTraversal {
         TreeNode left = new TreeNode(4);
         TreeNode right = new TreeNode(5);
         TreeNode treeNode = new TreeNode(3, left, right);
-        BinaryTreeInorderTraversal binaryTreeInorderTraversal = new BinaryTreeInorderTraversal();
-        binaryTreeInorderTraversal.inorderTraversal(treeNode);
+        inorderTraversal(treeNode);
         TreeNode.show(treeNode);
     }
 
@@ -33,7 +32,7 @@ public class BinaryTreeInorderTraversal {
      * @param root the root
      * @return the list
      */
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public static List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
         inorder(root, res);
         return res;
@@ -45,7 +44,7 @@ public class BinaryTreeInorderTraversal {
      * @param root the root
      * @param res  the res
      */
-    public void inorder(TreeNode root, List<Integer> res) {
+    public static void inorder(TreeNode root, List<Integer> res) {
         if (root == null) {
             // 递归结束条件，空则返回
             return;
