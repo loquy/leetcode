@@ -6,12 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 二叉树的中序遍历
- *
+ * 二叉树的后序遍历
  * @author loquy
- * @date 2021 /12/06 10:25
+ * @date 2021/12/10 16:40
  */
-public class BinaryTreeInorderTraversal {
+public class BinaryTreePostorderTraversal {
 
     /**
      * The entry point of application.
@@ -22,7 +21,7 @@ public class BinaryTreeInorderTraversal {
         TreeNode left = new TreeNode(4);
         TreeNode right = new TreeNode(5);
         TreeNode treeNode = new TreeNode(3, left, right);
-        List<Integer> integers = inorderTraversal(treeNode);
+        List<Integer> integers = postorderTraversal(treeNode);
         for (Integer integer : integers) {
             System.out.println(integer);
         }
@@ -30,34 +29,33 @@ public class BinaryTreeInorderTraversal {
     }
 
     /**
-     * Inorder traversal list.
+     * postorder traversal list.
      *
      * @param root the root
      * @return the list
      */
-    public static List<Integer> inorderTraversal(TreeNode root) {
+    public static List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
-        inorder(root, res);
+        postorder(root, res);
         return res;
     }
 
     /**
-     * Inorder.
+     * postorder.
      *
      * @param root the root
      * @param res  the res
      */
-    public static void inorder(TreeNode root, List<Integer> res) {
+    public static void postorder(TreeNode root, List<Integer> res) {
         if (root == null) {
-            // 递归结束条件，空则返回
             return;
         }
-        // 中序遍历，左->根->右的顺序
+        // 后序遍历，左->右->根的顺序
         // 递归遍历左子树，直到没有左子树
-        inorder(root.left, res);
+        postorder(root.left, res);
+        // 递归遍历右子树，直到没有右子树
+        postorder(root.right, res);
         // 把当前节点的值添加到集合
         res.add(root.val);
-        // 递归遍历右子树，直到没有右子树
-        inorder(root.right, res);
     }
 }
