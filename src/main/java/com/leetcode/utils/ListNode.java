@@ -46,8 +46,6 @@ public class ListNode {
 
     /**
      * 打印链表所有节点
-     *
-     * @return void
      */
     public void print(){
         System.out.print(val);
@@ -75,5 +73,15 @@ public class ListNode {
             }
         }
         return head;
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }
