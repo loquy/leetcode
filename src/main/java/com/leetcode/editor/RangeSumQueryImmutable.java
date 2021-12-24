@@ -17,9 +17,9 @@ public class RangeSumQueryImmutable {
      */
     public static void main(String[] args) {
         RangeSumQueryImmutable rangeSumQueryImmutable = new RangeSumQueryImmutable(new int[]{-2, 0, 3, -5, 2, -1});
-        int i = sumRange(0, 2);
-        int i1 = sumRange(2, 5);
-        int i2 = sumRange(0, 5);
+        int i = rangeSumQueryImmutable.sumRange(0, 2);
+        int i1 = rangeSumQueryImmutable.sumRange(2, 5);
+        int i2 = rangeSumQueryImmutable.sumRange(0, 5);
         System.out.println(i);
         System.out.println(i1);
         System.out.println(i2);
@@ -49,7 +49,7 @@ public class RangeSumQueryImmutable {
      * @param j the j
      * @return the int
      */
-    public static int sumRange(int i, int j) {
+    public int sumRange(int i, int j) {
         return sums[j + 1] - sums[i];
     }
 }
