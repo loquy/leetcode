@@ -19,9 +19,12 @@ public class BinaryTreeInorderTraversal {
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        TreeNode left = new TreeNode(4);
-        TreeNode right = new TreeNode(5);
-        TreeNode treeNode = new TreeNode(3, left, right);
+        TreeNode left2 = new TreeNode(4);
+        TreeNode right2 = new TreeNode(5);
+        TreeNode left = new TreeNode(2, left2, right2);
+        TreeNode right3 = new TreeNode(6);
+        TreeNode right = new TreeNode(3, null, right3);
+        TreeNode treeNode = new TreeNode(1, left, right);
         List<Integer> integers = inorderTraversal(treeNode);
         for (Integer integer : integers) {
             System.out.println(integer);
